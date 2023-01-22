@@ -1,6 +1,6 @@
 from django.db import models
 
-class Carros(models.Model):
-    modelo = models.CharField(max_length=150)
-    marca = models.CharField(max_length=100)
-    ano = models.IntegerField()
+class Pessoas(models.Model):
+    nome = models.CharField(max_length=150)
+    email = models.EmailField(max_length=100)
+    telefone = models.IntegerField()

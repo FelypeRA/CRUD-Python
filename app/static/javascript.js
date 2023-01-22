@@ -40,7 +40,6 @@
         }
         form.addEventListener('submit',sendForm,false)
 
-
     }
 
 })(window,document);

@@ -18,9 +18,9 @@
           <div id="result"></div>
           <form name="form" id="form" action="{% if db%}/update/{{db.id}}/{%else%}/create/{% endif %}" method="post">
               {% csrf_token %}
-              <div class="form-group mt-4">Modelo: {{form.modelo}}</div>
-              <div class="form-group mt-4">Marca: {{form.marca}}</div>
-              <div class="form-group mt-4">Ano: {{form.ano}}</div>
+              <div class="form-group mt-4">nome: {{form.nome}}</div>
+              <div class="form-group mt-4">email: {{form.email}}</div>
+              <div class="form-group mt-4">Telefone: {{form.telefone}}</div>
               <input type="submit" class="btn btn-success" value="Salvar">
           </form>
       </div>
